@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Documentation & Information Architecture | Sriprajna K. J</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="page-title">PRODUCT DOCUMENTATION & INFORMATION ARCHITECTURE</h1>
+    </div>
+  </header>
+
+  <main class="container content">
+    <!-- Guide Preview with image and project link -->
+    <section id="guide-preview" class="section">
+      <h2>Project Preview</h2>
+      <div class="guide-wrapper">
+        <img src="ai-windows-guide.png" alt="Guide cover thumbnail" class="guide-image" />
+        <div class="guide-info">
+          <p>
+            This portfolio entry summarizes my work on Dell's knowledge base article
+            <em>How to identify AI-enabled Windows computers</em>, aimed at helping customers
+            and support teams quickly determine whether a device meets AI PC criteria and where
+            to find the relevant specs and signals within Dell's ecosystem.
+          </p>
+          <a class="project-btn" href="https://www.dell.com/support/kbdoc/en-in/000223944/how-to-identify-ai-enabled-windows-computers" target="_blank" rel="noopener">View Official KB</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Context -->
+    <section id="context" class="section">
+      <h2>Context</h2>
+      <p>
+        As part of Dell Technologies’ product content initiatives, I focused on clarifying
+        and structuring documentation around emerging AI PC terminology and capabilities.
+        The objective was to provide clear guidance for enterprise IT teams and end users on
+        understanding what qualifies as an AI-enabled Windows computer and how to locate those
+        details across Dell product pages and support tools.
+      </p>
+    </section>
+
+    <!-- Problem -->
+    <section id="problem" class="section">
+      <h2>Problem</h2>
+      <p>
+        With rapid changes in hardware (CPU, GPU, NPU) and OS features, customers needed a
+        single, authoritative resource that explains the indicators of AI capability and where
+        to verify them. Prior content was fragmented or overly technical, creating confusion
+        and additional load on support channels.
+      </p>
+    </section>
+
+    <!-- Contribution -->
+    <section id="contribution" class="section">
+      <h2>Contribution</h2>
+      <ul>
+        <li>Conducted a terminology and content audit across related Dell KBs and product specs.</li>
+        <li>Defined an IA that maps hardware capabilities (CPU/GPU/NPU) to Windows AI features.</li>
+        <li>Wrote scannable guidance with headings, steps, and definitions for quick decisions.</li>
+        <li>Aligned UI and wording with product and support teams for consistency and accuracy.</li>
+        <li>Prepared the content for localization and iterative updates as AI PC criteria evolve.</li>
+      </ul>
+    </section>
+
+    <!-- Impact -->
+    <section id="impact" class="section">
+      <h2>Impact</h2>
+      <p>
+        The article improves customer self-service, searchability, and support accuracy by
+        centralizing AI PC identification guidance. It provides a reusable structure for
+        future AI-related product content and reduces ambiguity across documentation surfaces.
+      </p>
+    </section>
+
+    <!-- Links -->
+    <section id="links" class="section">
+      <h2>Links</h2>
+      <p>
+        📄 Official KB: <a href="https://www.dell.com/support/kbdoc/en-in/000223944/how-to-identify-ai-enabled-windows-computers" target="_blank" rel="noopener">How to identify AI-enabled Windows computers</a>
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Sriprajna K. J · <a class="back-to-top" href="#top">Back to top</a></p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
