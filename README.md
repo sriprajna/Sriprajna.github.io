@@ -1,73 +1,67 @@
 # Sriprajna KJ — Portfolio (Static Build for GitHub Pages)
 
-A modern, editorial-style portfolio built with React + TailwindCSS. This build is a **fully static site** with no backend dependency — it works on GitHub Pages, Netlify, Vercel, S3, or any static host.
+A modern, editorial-style portfolio built with React + TailwindCSS.
+Fully static — works on GitHub Pages, Netlify, Vercel, S3, or any static host.
 
-## What's in this ZIP
+## What's inside
 
 - `index.html` — entry point
+- `404.html` — fallback for GitHub Pages
 - `static/` — bundled CSS + JS + assets
 - `asset-manifest.json` — build manifest
 - `README.md` — this file
 
 Total size: ~1 MB (gzipped).
 
-## Deploy to GitHub Pages (Recommended)
-
-You have two options depending on your repo type:
+## Deploy to GitHub Pages
 
 ### Option A — User site (`sriprajna.github.io` repo)
 
 1. Clone your `sriprajna.github.io` repo locally.
-2. Delete existing content (or move it to a branch as backup).
-3. Copy **all files inside this ZIP** (not the folder itself) to the repo root.
-4. Commit and push to `main`:
+2. Move existing content to a backup branch if you want to keep it.
+3. Copy all files from this ZIP (not the folder itself) into the repo root.
+4. Commit and push:
    ```bash
    git add .
-   git commit -m "Deploy new portfolio site"
+   git commit -m "Deploy new portfolio"
    git push origin main
    ```
-5. Site goes live at `https://sriprajna.github.io/` within 1–2 minutes.
+5. Live at `https://sriprajna.github.io/` in ~1 minute.
 
-### Option B — Project site (any repo, served at `sriprajna.github.io/repo-name/`)
+### Option B — Project site (any repo)
 
 1. Create a new repo (e.g., `portfolio`).
 2. Copy all files from this ZIP to the repo root.
-3. Push to `main`:
-   ```bash
-   git add . && git commit -m "Deploy portfolio" && git push origin main
-   ```
-4. Go to repo → **Settings → Pages** → source: `main` branch, `/root`.
-5. Site goes live at `https://sriprajna.github.io/portfolio/`.
+3. Push to `main`.
+4. Settings → Pages → source: `main` branch, `/root`.
+5. Live at `https://sriprajna.github.io/portfolio/`.
 
-The build uses `"homepage": "."` so **both options work with no changes needed**.
+Both options work with no code changes because `homepage` is set to `"."`.
 
 ## Routing
 
-The site uses `HashRouter` (URLs like `/#/projects/dell-data-engineering-course-suite`) which works out-of-the-box on GitHub Pages without needing a 404.html rewrite.
+Uses `HashRouter` (URLs like `/#/projects/ai-native-engineering-enablement-program`) so no server-side rewrite config is needed on GitHub Pages.
 
-## Contact Form & Resource Requests
+## Contact form & resource downloads
 
-- **Contact form**: on submit, opens the visitor's email client (mailto:) with the message prefilled to `sriprajna@gmail.com`.
-- **Resource downloads**: each resource card asks for name + email, then opens a mailto: request to `sriprajna@gmail.com`.
+Both flows open the visitor's default email client (mailto:) with the message prefilled to `sriprajna@gmail.com`. No backend is required.
 
-To upgrade later to real form submission storage:
-1. Add SendGrid/Formspree/Netlify Forms.
-2. Update `Contact.jsx` and `Resources.jsx` to POST to your service endpoint.
+To upgrade later, wire the form submissions to Formspree, Netlify Forms, or your own backend by editing `Contact.jsx` and `Resources.jsx` before rebuilding.
 
 ## Resume PDF
 
-The "Download Resume" button in the Hero generates a professional PDF client-side using jsPDF from the data in `mock.js` — no server needed. To update the resume content, edit the experience/certifications/profile in `mock.js` and re-run the build.
+The "Download Resume" button in the Hero generates a multi-page professional PDF client-side using jsPDF. Content is sourced from `mock.js` — edit and rebuild to update.
 
 ## Rebuilding from source
 
-The full source (React + FastAPI backend for optional lead capture) lives in the parent project. To rebuild:
 ```bash
 cd frontend
 yarn install
 yarn build
 ```
-The `build/` folder can be re-uploaded to GitHub Pages.
+
+The `build/` folder can be re-uploaded to your GitHub Pages repo.
 
 ---
 
-Portfolio design inspired by editorial layouts. Fonts: Fraunces (headings) + Inter (body). Icons: lucide-react.
+Design inspiration: modern editorial portfolios. Fonts: Fraunces (headings) + Inter (body). Icons: lucide-react.
