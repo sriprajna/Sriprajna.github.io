@@ -16,7 +16,7 @@ This ZIP is prepared for the root user site at `https://sriprajna.github.io/`.
 - `404.html` fallback for direct links to portfolio work samples
 - Local copies of the two interactive HTML dashboard samples
 - Learning analytics smart-art route
-- Recruiter guide and project thumbnails
+- Purpose-built project thumbnails
 - Downloadable Northstar case-study package
 
 The portfolio uses fictional dashboard data. Northstar AI-style insights are deterministic and simulated, not a live AI integration.

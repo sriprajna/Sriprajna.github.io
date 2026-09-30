@@ -27,7 +27,7 @@ the hashed files inside assets/ for safe browser caching.
 Portfolio content
 -----------------
 work-samples/              Local interactive dashboard HTML files
-downloads/                 Downloadable portfolio and Northstar packages
+downloads/                 Downloadable Northstar package
 
 The old static/css/main.fb1d34de.css and static/js/main.3ef4e0ff.js files
 belong to the previous build and are not required by this package.
