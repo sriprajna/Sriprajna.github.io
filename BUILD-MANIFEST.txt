@@ -1,0 +1,33 @@
+SRIPRAJNA PORTFOLIO — COMPLETE GITHUB PAGES BUILD
+=================================================
+
+Upload every file and folder in this package to the root of the
+sriprajna.github.io repository.
+
+Required entry files
+--------------------
+index.html                 Main GitHub Pages entry
+404.html                   Direct-route fallback
+.nojekyll                  Prevents Jekyll processing
+GITHUB-PAGES-README.md     Publishing instructions
+
+CSS and JavaScript
+------------------
+assets/index-*.css         Production stylesheet referenced by index.html
+assets/index-*.js          Production JavaScript referenced by index.html
+assets/*.woff / *.woff2    Local portfolio fonts
+
+For easy inspection, identical aliases are also included:
+css/main.css               Copy of the production stylesheet
+js/main.js                 Copy of the production JavaScript
+
+IMPORTANT: Do not delete the assets/ folder. The generated index.html uses
+the hashed files inside assets/ for safe browser caching.
+
+Portfolio content
+-----------------
+work-samples/              Local interactive dashboard HTML files
+downloads/                 Downloadable portfolio and Northstar packages
+
+The old static/css/main.fb1d34de.css and static/js/main.3ef4e0ff.js files
+belong to the previous build and are not required by this package.
